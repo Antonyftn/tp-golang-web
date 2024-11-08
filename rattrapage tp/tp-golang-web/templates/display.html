@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Affichage des Informations</title>
+</head>
+<body>
+    <h1>Informations Utilisateur</h1>
+    {{if .Nom}}
+    <p>Nom : {{.Nom}}</p>
+    <p>Prénom : {{.Prenom}}</p>
+    <p>Date de naissance : {{.DateNaissance}}</p>
+    <p>Sexe : {{.Sexe}}</p>
+    {{else}}
+    <p>Merci de renseigner vos informations personnelles via le <a href="/user/form">formulaire</a>.</p>
+    {{end}}
+</body>
+</html>
